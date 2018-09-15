@@ -1,8 +1,10 @@
 import argparse
 import sys
 import hashlib
+import os
 
-
+sys.path.append(os.path.join(os.path.dirname(os.getcwd()),'video_caption_eval_python3','evaluators'))
+#sys.path.append('/playpen1/home/ram/open-source/video_caption_eval_python3/evaluators/')
 from evaluators.tokenizer.ptbtokenizer import  PTBTokenizer
 from evaluators.bleu.bleu import Bleu
 from evaluators.meteor.meteor import Meteor
